@@ -1,0 +1,36 @@
+{
+    "name": "EchangeDevise",
+    "fields": [
+        {
+            "fieldName": "code1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tauxchange",
+            "fieldType": "Float"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "devise",
+            "otherEntityRelationshipName": "echangedevise",
+            "relationshipName": "devise",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200602110600",
+    "entityTableName": "echange_devise",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

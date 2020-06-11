@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.wegatravel.partnermanager",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "WegaTravelPartnerManager",
+    "packageName": "com.wegatravel.partnermanager",
+    "packageFolder": "com/wegatravel/partnermanager",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjMxMTM2ZGZiODEzMzdiNWVkNzQzOTk4NmU2MzA4ZWZmMWVlN2QxZmIzODhiMTc0MjE4MWNiZGQzZTM3MjVjYWJhYjExMzE3NzY0MzAxZGI0YWUxYTRkZGQyYzNiZjIyZWYzNTlkMzE5NWE0ZDQ4ZmUxODA4MWQ5Yzk2NGNhOTI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "primary",
+    "creationTimestamp": 1591094622964,
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "ar-ly", "fr"],
+    "blueprints": []
+  }
+}

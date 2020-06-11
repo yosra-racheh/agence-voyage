@@ -1,0 +1,20 @@
+{
+    "name": "Commission",
+    "fields": [
+        {
+            "fieldName": "taux",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200602110400",
+    "entityTableName": "commission",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

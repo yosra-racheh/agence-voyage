@@ -1,0 +1,39 @@
+{
+    "name": "Devise",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "echangeDevise",
+            "otherEntityRelationshipName": "devise",
+            "relationshipName": "echangedevise"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "agenceVoyage",
+            "otherEntityRelationshipName": "devise",
+            "relationshipName": "agencevoyage",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200602110500",
+    "entityTableName": "devise",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

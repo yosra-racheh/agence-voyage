@@ -1,0 +1,25 @@
+{
+  "wegaTravelPartnerManagerApp": {
+    "echangeDevise": {
+      "home": {
+        "title": "Echange Devises",
+        "createLabel": "Create a new Echange Devise",
+        "createOrEditLabel": "Create or edit a Echange Devise",
+        "notFound": "No Echange Devises found"
+      },
+      "created": "A new Echange Devise is created with identifier {{ param }}",
+      "updated": "A Echange Devise is updated with identifier {{ param }}",
+      "deleted": "A Echange Devise is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Echange Devise {{ id }}?"
+      },
+      "detail": {
+        "title": "Echange Devise"
+      },
+      "code1": "Code 1",
+      "code2": "Code 2",
+      "tauxchange": "Tauxchange",
+      "devise": "Devise"
+    }
+  }
+}

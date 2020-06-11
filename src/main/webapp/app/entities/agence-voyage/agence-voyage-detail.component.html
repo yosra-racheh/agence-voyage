@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="agenceVoyage">
+            <h2><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.detail.title">Agence Voyage</span> {{ agenceVoyage.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.nom">Nom</span></dt>
+                <dd>
+                    <span>{{ agenceVoyage.nom }}</span>
+                </dd>
+                <dt><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.lieu">Lieu</span></dt>
+                <dd>
+                    <span>{{ agenceVoyage.lieu }}</span>
+                </dd>
+                <dt><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.ville">Ville</span></dt>
+                <dd>
+                    <span>{{ agenceVoyage.ville }}</span>
+                </dd>
+                <dt><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.commission">Commission</span></dt>
+                <dd>
+                    <div *ngIf="agenceVoyage.commission">
+                        <a [routerLink]="['/commission', agenceVoyage.commission?.id, 'view']">{{ agenceVoyage.commission?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="wegaTravelPartnerManagerApp.agenceVoyage.devise">Devise</span></dt>
+                <dd>
+                    <span *ngFor="let devise of agenceVoyage.devises; let last = last">
+                        <a [routerLink]="['/devise', devise?.id, 'view']">{{ devise.id }}</a>{{ last ? '' : ', ' }}
+                    </span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/agence-voyage', agenceVoyage.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

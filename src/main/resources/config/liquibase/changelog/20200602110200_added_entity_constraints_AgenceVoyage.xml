@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity AgenceVoyage.
+    -->
+    <changeSet id="20200602110200-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="commission_id"
+                                 baseTableName="agence_voyage"
+                                 constraintName="fk_agence_voyage_commission_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="commission"/>
+
+        <addForeignKeyConstraint baseColumnNames="agence_voyage_id"
+                                 baseTableName="agence_voyage_devise"
+                                 constraintName="fk_agence_voyage_devise_agence_voyage_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="agence_voyage"/>
+
+        <addForeignKeyConstraint baseColumnNames="devise_id"
+                                 baseTableName="agence_voyage_devise"
+                                 constraintName="fk_agence_voyage_devise_devise_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="devise"/>
+        
+    </changeSet>
+</databaseChangeLog>

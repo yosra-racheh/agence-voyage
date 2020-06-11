@@ -1,0 +1,35 @@
+entity AgenceVoyage{
+nom String,
+lieu String,
+ville String
+}
+entity Reservation {
+date LocalDate,
+montant Float
+}
+entity Commission{
+taux String
+}
+entity Devise{
+nom String,
+code String
+}
+entity EchangeDevise{
+code1 String,
+code2 String,
+tauxchange Float
+}
+relationship OneToMany {
+	AgenceVoyage {reservation} to Reservation{agencevoyage}
+	
+}
+relationship OneToMany {
+	Devise {echangedevise} to EchangeDevise{devise}
+	
+}
+relationship ManyToOne {
+	AgenceVoyage{commission} to Commission
+    }
+  relationship ManyToMany {
+	AgenceVoyage{devise} to Devise{agencevoyage}	
+}

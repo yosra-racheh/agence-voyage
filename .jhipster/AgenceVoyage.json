@@ -1,0 +1,50 @@
+{
+    "name": "AgenceVoyage",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lieu",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ville",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "reservation",
+            "otherEntityRelationshipName": "agencevoyage",
+            "relationshipName": "reservation"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "commission",
+            "otherEntityRelationshipName": "agenceVoyage",
+            "relationshipName": "commission",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "devise",
+            "otherEntityRelationshipName": "agencevoyage",
+            "relationshipName": "devise",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200602110200",
+    "entityTableName": "agence_voyage",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Reservation",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "montant",
+            "fieldType": "Float"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "agenceVoyage",
+            "otherEntityRelationshipName": "reservation",
+            "relationshipName": "agencevoyage",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200602110300",
+    "entityTableName": "reservation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

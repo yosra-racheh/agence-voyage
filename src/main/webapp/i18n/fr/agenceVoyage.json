@@ -1,0 +1,27 @@
+{
+  "wegaTravelPartnerManagerApp": {
+    "agenceVoyage": {
+      "home": {
+        "title": "AgenceVoyages",
+        "createLabel": "Créer un nouveau Agence Voyage",
+        "createOrEditLabel": "Créer ou éditer un Agence Voyage",
+        "notFound": "Aucun Agence Voyage trouvé"
+      },
+      "created": "Un nouveau Agence Voyage a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Agence Voyage avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Agence Voyage avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Agence Voyage {{ id }} ?"
+      },
+      "detail": {
+        "title": "Agence Voyage"
+      },
+      "nom": "Nom",
+      "lieu": "Lieu",
+      "ville": "Ville",
+      "reservation": "Reservation",
+      "commission": "Commission",
+      "devise": "Devise"
+    }
+  }
+}

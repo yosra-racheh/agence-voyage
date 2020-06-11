@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity EchangeDevise.
+    -->
+    <changeSet id="20200602110600-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="devise_id"
+                                 baseTableName="echange_devise"
+                                 constraintName="fk_echange_devise_devise_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="devise"/>
+
+    </changeSet>
+</databaseChangeLog>
